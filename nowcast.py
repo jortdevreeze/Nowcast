@@ -498,14 +498,3 @@ def __validate_dates(first, last, dformat):
         last = first
         
     return first, last
-    
-    
-#related = get_related(title='Influenza', lang='de', level=1, related=['Halsschmerzen', 'Erkältung'])
-#related, weights = get_related(title='Influenza', lang='de', level=1, related=['Halsschmerzen'])
-#related, weights = get_related(title='Influenza', lang='de', level=1, related=['Halsschmerzen', 'Erkältung'], method='weight')
-
-data1 = get_sharkviews(title='Influenza', lang='de', interval='daily', first='01-01-2008', last='01-08-2015')
-data2 = get_wikiviews(title='Influenza', lang='de', interval='daily', first='01-08-2015', last='01-08-2017')
-
-
-import tensorflow as tf
