@@ -24,8 +24,9 @@ To install ParseWiki, simply run:
   >>> users_ru = set(wiki.get_users(lang="ru"))
   >>>
   >>> unique_users = []
-  >>> for name in users_ca.intersection(users_es):
-  >>>     users.append(name)
+  >>> for name in users_uk.intersection(users_ru):
+  >>>     unique_users.append(name)
   >>>
-  >>> page.extract_revisions_by_user(lang="ru", username=users[0])
+  >>> page.extract_revisions_by_user(lang="ru", username=unique_users[0])
+  >>> ...
   
